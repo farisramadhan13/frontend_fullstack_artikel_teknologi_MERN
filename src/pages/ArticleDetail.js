@@ -45,7 +45,7 @@ const ArticleDetail = () => {
           <div className="px-4 py-5 sm:p-6">
             {article.image_url && <img src={article.image_url} alt={article.title} className="mb-4 w-full h-48 object-cover" />}
             <h2 className="text-2xl font-extrabold text-gray-900">{article.title}</h2>
-            <p className="mt-2 text-sm text-gray-500">{article.body}</p>
+            <p className="mt-2 text-sm text-gray-500" dangerouslySetInnerHTML={{ __html: article.body }} />
           </div>
         </div>
       </div>

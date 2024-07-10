@@ -124,7 +124,7 @@ const Admin = () => {
                   <li key={article.id} className="mb-4">
                     {article.image_url && <img src={article.image_url} alt={article.title} className="mb-2 w-full h-48 object-cover" />}
                     <h4 className="text-xl font-semibold">{article.title}</h4>
-                    <p className="text-gray-700">{article.body}</p>
+                    <div className="text-gray-700" dangerouslySetInnerHTML={{ __html: article.body }} />
                     <button onClick={() => handleEdit(article)} className="mr-2 text-blue-500 hover:underline">Edit</button>
                     <button onClick={() => handleDelete(article.id)} className="text-red-500 hover:underline">Delete</button>
                   </li>
