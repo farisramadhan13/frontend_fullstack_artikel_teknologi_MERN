@@ -9,7 +9,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Dummy login validation
-    if (username === 'admin' && password === 'password') {
+    if (username === 'admin' && password === 'inipassword') {
       // Navigasi ke halaman admin setelah login berhasil
       navigate('/admin');
     } else {
