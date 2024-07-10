@@ -27,8 +27,8 @@ const Home = () => {
               <Link to={`/article/${article.id}`} className="block hover:bg-gray-50 focus:outline-none focus:bg-gray-50">
                 <div className="px-4 py-5 sm:p-6">
                   {article.image_url && <img src={article.image_url} alt={article.title} className="mb-4 w-full h-48 object-cover" />}
-                  <h3 className="text-lg font-medium text-gray-900">{article.title}</h3>
-                  <div className="mt-2 text-sm text-gray-500 line-clamp-2" dangerouslySetInnerHTML={{ __html: article.body }} />
+                  <h3 className="text-lg font-medium text-gray-900 text-center">{article.title}</h3>
+                  <div className="mt-2 text-sm text-gray-500 text-justify line-clamp-2" dangerouslySetInnerHTML={{ __html: article.body }} />
                 </div>
               </Link>
             </div>
